@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header>
+    <!-- place navbar here -->
+  </header>
+  <main>
+    <style>
+        body {
+            background-color:rgb(137, 187, 187);
+        }
+        .rotar {
+          transition: transform 0.5s ease;
+        }
+      </style>
+<div class="container-fluid">
+<h1 style="padding-left: 350px; padding-top:50px; font-family: LUCIDA SANS; color: azure;">PAGE IN MAINTENANCE</h2>
+
+ <img id="Engranaje"    src="./Imagen/Engranaje.png" >
+ <img id="Engranaje1" style="height: 200px;"   src="./Imagen/Engranaje.png" >
+ <img id="Engranaje2" style="height: 250px;"   src="./Imagen/Engranaje.png" >
+</div>
+ <script>
+    setInterval(() => {
+      const imagen = document.querySelector('#Engranaje');
+      imagen.style.transform = `rotate(${(parseInt(imagen.style.transform.replace('rotate(','').replace('deg)', '')) || 80) + 190}deg)`;
+    }, 100);
+
+    setInterval(() => {
+      const imagen = document.querySelector('#Engranaje1');
+      imagen.style.transform = `rotate(${(parseInt(imagen.style.transform.replace('rotate(','').replace('deg)', '')) || 80) + 190}deg)`;
+    }, 100);
+    setInterval(() => {
+      const imagen = document.querySelector('#Engranaje2');
+      imagen.style.transform = `rotate(${(parseInt(imagen.style.transform.replace('rotate(','').replace('deg)', '')) || 80) + 190}deg)`;
+    }, 100);
+
+  </script>
+
+
+
+
+
+
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
